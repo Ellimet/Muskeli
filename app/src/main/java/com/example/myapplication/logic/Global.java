@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,5 +19,17 @@ public class Global {
         return exercises;
     }
 
+    public List<Exercise> renewExercises(int difficulty) {
+        this.exercises = new ArrayList<>();
+        if (difficulty == 0) {
+            //arvotaan
 
+        } else if (difficulty == 1) {
+
+        } else {
+
+        }
+        return exercises;
+    }
 }
+

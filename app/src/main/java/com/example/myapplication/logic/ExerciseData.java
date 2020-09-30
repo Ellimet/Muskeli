@@ -1,11 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.logic;
 
-import java.util.HashMap;
-import java.util.Map;
+public final class ExerciseData {
 
-public class ExerciseData {
-
-    public static String[] names = {
+    public static final String[] names = {
             "Knee push-up",
             "Elbow raise",
             "Scapular Push",
@@ -43,20 +40,20 @@ public class ExerciseData {
             "Heels to the heavens"
     };
 
-    public static Exercise[] easy = {
+    public static final Exercise[] easy = {
             Exercise.KNEE_PUSH_UP,
             Exercise.ELBOW_RAISE,
             Exercise.SCAPULAR_PUSH,
             Exercise.SQUAT,
             Exercise.THREE_WAY_LUNGE,
-            Exercise.PLANK_OPPOSITE_KNEE_TO_ELBOEW,
+            Exercise.PLANK_OPPOSITE_KNEE_TO_ELBOW,
             Exercise.JUMPING_JACKS,
             Exercise.ISO_CRUNCHES,
             Exercise.RECLINER_ELBOW_TO_KNEE_TUCKS,
             Exercise.GLUTE_BRIDGE,
 
     };
-    public static Exercise[] medium = {
+    public static final Exercise[] medium = {
             Exercise.SPIDERMNA_PUSHUP,
             Exercise.PIKE_PUSHUP,
             Exercise.BEGINNER_SHRIMP,
@@ -70,9 +67,8 @@ public class ExerciseData {
             Exercise.SQUAT_JUMPS,
             Exercise.SINGLE_LEG_RDL,
 
-
     };
-    public static Exercise[] hard = {
+    public static final Exercise[] hard = {
             Exercise.BODYWEIGHT_SIDE_LATERAL_RAISES,
             Exercise.DIAMOND_PUSHUP,
             Exercise.PLYO_PUSHUP,

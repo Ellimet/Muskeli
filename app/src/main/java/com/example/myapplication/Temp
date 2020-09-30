@@ -1,0 +1,44 @@
+
+
+        TabLayout tabLayout = findViewById(R.id.tabBar);
+        TabItem tabProgress = findViewById(R.id.tabProgress);
+        TabItem tabHome = findViewById(R.id.tabHome);
+        TabItem tabGoal = findViewById(R.id.tabGoal);
+        ViewPager viewPager = findViewById(R.id.view_pager);
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabBar"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edistyminen" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koti" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tavoite" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="731dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />

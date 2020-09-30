@@ -9,7 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ui.GoalActivity"
+            android:parentActivityName=".ui.MainActivity">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ProgressActivity"
+            android:parentActivityName=".ui.MainActivity">
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.ExerciseActivity"
+            android:parentActivityName=".ui.MainActivity">
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

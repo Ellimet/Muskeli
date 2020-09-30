@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.logic;
 
 public enum Exercise {
     KNEE_PUSH_UP,
@@ -6,11 +6,12 @@ public enum Exercise {
     SCAPULAR_PUSH,
     SQUAT,
     THREE_WAY_LUNGE,
-    PLANK_OPPOSITE_KNEE_TO_ELBOEW,
+    PLANK_OPPOSITE_KNEE_TO_ELBOW,
     JUMPING_JACKS,
     ISO_CRUNCHES,
     RECLINER_ELBOW_TO_KNEE_TUCKS,
     GLUTE_BRIDGE,
+    PUSH_UP,
     //Keskitaso
     SPIDERMNA_PUSHUP,
     PIKE_PUSHUP,
