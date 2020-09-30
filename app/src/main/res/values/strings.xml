@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="press_to_save_fact_to_favorites">Press to save fact to favorites</string>
+</resources>
