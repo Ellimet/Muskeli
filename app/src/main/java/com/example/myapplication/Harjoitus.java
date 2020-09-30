@@ -3,7 +3,7 @@ package com.example.myapplication;
 public enum Harjoitus {
     KNEE_PUSH_UP,
     ELBOW_RAISE,
-    Scapular Push
+    Scapular Push,
     Squat
     Three way lunge
     Three way lunge
