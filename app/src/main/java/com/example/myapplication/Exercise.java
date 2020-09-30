@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-public enum Harjoitus {
+public enum Exercise {
     KNEE_PUSH_UP,
     ELBOW_RAISE,
     Scapular Push,
