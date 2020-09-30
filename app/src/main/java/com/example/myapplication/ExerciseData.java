@@ -46,20 +46,20 @@ public class ExerciseData {
     public static Exercise[] easy = {
             Exercise.KNEE_PUSH_UP,
             Exercise.ELBOW_RAISE,
-            Exercise.SPACULAR_PUSH,
+            Exercise.SCAPULAR_PUSH,
 
     };
     public static Exercise[] medium = {
             Exercise.KNEE_PUSH_UP,
             Exercise.ELBOW_RAISE,
-            Exercise.SPACULAR_PUSH,
+            Exercise.SCAPULAR_PUSH,
 
 
     };
     public static Exercise[] hard = {
             Exercise.KNEE_PUSH_UP,
             Exercise.ELBOW_RAISE,
-            Exercise.SPACULAR_PUSH,
+            Exercise.SCAPULAR_PUSH,
 
     };
 
