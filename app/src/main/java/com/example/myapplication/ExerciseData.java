@@ -17,7 +17,7 @@ public class ExerciseData {
             "Recliner elbow to knee tucks",
             "Glute bridge",
             "Push-up",
-            "Spiderman pushup",
+            "Spiderman push-up",
             "Pike push-up",
             "Beginner Shrimp",
             "Floor bridge half rotation",
@@ -47,20 +47,44 @@ public class ExerciseData {
             Exercise.KNEE_PUSH_UP,
             Exercise.ELBOW_RAISE,
             Exercise.SCAPULAR_PUSH,
+            Exercise.SQUAT,
+            Exercise.THREE_WAY_LUNGE,
+            Exercise.PLANK_OPPOSITE_KNEE_TO_ELBOEW,
+            Exercise.JUMPING_JACKS,
+            Exercise.ISO_CRUNCHES,
+            Exercise.RECLINER_ELBOW_TO_KNEE_TUCKS,
+            Exercise.GLUTE_BRIDGE,
 
     };
     public static Exercise[] medium = {
-            Exercise.KNEE_PUSH_UP,
-            Exercise.ELBOW_RAISE,
-            Exercise.SCAPULAR_PUSH,
+            Exercise.SPIDERMNA_PUSHUP,
+            Exercise.PIKE_PUSHUP,
+            Exercise.BEGINNER_SHRIMP,
+            Exercise.FLOOR_BRIDGE_HALF_ROTATION,
+            Exercise.SUPERMANS,
+            Exercise.STARFISH_CRUNCHES,
+            Exercise.WINDSHIELD_WIPERS,
+            Exercise.HEELS_TO_THE_HEAVENS,
+            Exercise.BURPEE,
+            Exercise.SPLIT_SQUAT_JUMPS,
+            Exercise.SQUAT_JUMPS,
+            Exercise.SINGLE_LEG_RDL,
 
 
     };
     public static Exercise[] hard = {
-            Exercise.KNEE_PUSH_UP,
-            Exercise.ELBOW_RAISE,
-            Exercise.SCAPULAR_PUSH,
-
+            Exercise.BODYWEIGHT_SIDE_LATERAL_RAISES,
+            Exercise.DIAMOND_PUSHUP,
+            Exercise.PLYO_PUSHUP,
+            Exercise.ARCHER_PUSHUP,
+            Exercise.HINDU_PUSHUP,
+            Exercise.SQUAT_THRUST_X_PUSHUP,
+            Exercise.BRIDGE,
+            Exercise.COUSSAC_SQUAT,
+            Exercise.STARFISH_CRUNCHES,
+            Exercise.WINDSHIELD_WIPERS,
+            Exercise.HEELS_TO_THE_HEAVENS,
+            Exercise.BURPEE,
     };
 
 
