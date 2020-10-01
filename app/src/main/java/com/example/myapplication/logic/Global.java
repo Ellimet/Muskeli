@@ -34,15 +34,8 @@ public class Global {
     }
 
     public Exercise[] renewExercises() {
-        this.exercises = ExerciseData.easy;
-        if (difficulty == 0) {
-            //arvotaan
-
-        } else if (difficulty == 1) {
-
-        } else {
-
-        }
+        this.exercises = getExercisesByDifficulty();
+        //shufflaa noi!
         return exercises;
     }
     public Exercise[] renewExercise(int index) {
