@@ -27,6 +27,7 @@ public class Global {
 
     public Exercise[] setExercises(Exercise[] e) {
         this.exercises = e;
+        return this.exercises;
     }
     public int getDifficulty() {
         return this.difficulty;
