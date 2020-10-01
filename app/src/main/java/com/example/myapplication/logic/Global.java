@@ -1,43 +1,50 @@
 package com.example.myapplication.logic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class Global {
 
     public Random rng;
-
-    private Exercise[] exercises;
     private int difficulty;
-
-    private static final Global singleton = new Global();
+    private Exercise[] exercises;
+    private static final Global singleton = new Global(); //luokka luodaan ohjelman kännistyessä
 
     private Global() {
         rng = new Random(1337);
     }
 
+    //Pääsy tähän luokkaan
     public static Global getInstance() {
         return singleton;
     }
 
+    public int getDifficulty() {
+        return this.difficulty;
+    }
     public Exercise[] getExercises() {
         return exercises;
     }
 
-    public Exercise[] setExercises(Exercise[] e) {
-        this.exercises = e;
-        return this.exercises;
+    //set specific difficulty, on startup.
+    public void setDifficulty(int difficulty) {
+        this.difficulty = difficulty;
     }
-    public int getDifficulty() {
-        return this.difficulty;
+    //set specific exercises, on startup.
+    public void setExercises(Exercise[] e) {
+        this.exercises = e;
     }
 
+    //Sufflaa uudet harjoitukset. Koska haluamme käyttää Elmon suositusta, Shufflea, pitää tehdä pari tyyppimuunnosta :(
     public Exercise[] renewExercises() {
-        this.exercises = getExercisesByDifficulty();
-        //shufflaa noi!
-        return exercises;
+        List<Exercise> newExercises = Arrays.asList(getExercisesByDifficulty()); //Exercise[] to List<Exercise>
+        Collections.shuffle(newExercises);  //SHUFFLE!
+        return (Exercise[]) newExercises.toArray(); //List<Exercise> to Exercise[]
     }
+    //Arpoo yhden uuden harjoituksen.
     public Exercise[] renewExercise(int index) {
         int harjoitus = rng.nextInt(6);
         this.exercises[index] = getExercisesByDifficulty()[harjoitus];
