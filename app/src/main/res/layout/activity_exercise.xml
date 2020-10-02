@@ -37,8 +37,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
+        android:id="@+id/RadioGroupWorkout"
         android:layout_width="139dp"
         android:layout_height="94dp"
+        android:checkedButton="@id/radioButtonEasy"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
