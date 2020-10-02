@@ -10,7 +10,7 @@ public class ExerciseManager {
     }
     public void start() {
         Global.getInstance().getExercises();
-        Global.getInstance().renewExercises(0);
+        Global.getInstance().renewExercises();
     }
 
 }

@@ -1,35 +1,58 @@
 package com.example.myapplication.logic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class Global {
-    private List<Exercise> exercises;
-    private static final Global singleton = new Global();
+
+    public Random rng;
+    private int difficulty;
+    private Exercise[] exercises;
+    private static final Global singleton = new Global(); //luokka luodaan ohjelman kännistyessä
 
     private Global() {
-        exercises = new ArrayList<>();
+        rng = new Random(1337);
     }
 
+    //Pääsy tähän luokkaan
     public static Global getInstance() {
         return singleton;
     }
 
-    public List<Exercise> getExercises() {
+    public int getDifficulty() {
+        return this.difficulty;
+    }
+    public Exercise[] getExercises() {
         return exercises;
     }
 
-    public List<Exercise> renewExercises(int difficulty) {
-        this.exercises = new ArrayList<>();
-        if (difficulty == 0) {
-            //arvotaan
+    //set specific difficulty, on startup.
+    public void setDifficulty(int difficulty) {
+        this.difficulty = difficulty;
+    }
+    //set specific exercises, on startup.
+    public void setExercises(Exercise[] e) {
+        this.exercises = e;
+    }
 
-        } else if (difficulty == 1) {
+    //Sufflaa uudet harjoitukset. Koska haluamme käyttää Elmon suositusta, Shufflea, pitää tehdä pari tyyppimuunnosta :(
+    public Exercise[] renewExercises() {
+        List<Exercise> newExercises = Arrays.asList(getExercisesByDifficulty()); //Exercise[] to List<Exercise>
+        Collections.shuffle(newExercises);  //SHUFFLE!
+        return (Exercise[]) newExercises.toArray(); //List<Exercise> to Exercise[]
+    }
+    //Arpoo yhden uuden harjoituksen.
+    public Exercise[] renewExercise(int index) {
+        int harjoitus = rng.nextInt(6);
+        this.exercises[index] = getExercisesByDifficulty()[harjoitus];
+        return this.exercises;
+    }
 
-        } else {
-
-        }
-        return exercises;
+    private Exercise[] getExercisesByDifficulty() {
+        return this.difficulty == 0 ? ExerciseData.easy :  this.difficulty == 1 ? ExerciseData.medium : ExerciseData.hard;
     }
 }
 
